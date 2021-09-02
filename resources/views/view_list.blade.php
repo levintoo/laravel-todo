@@ -22,6 +22,17 @@
         </style>
     </head>
     <body class="antialiased">
-            hello world
+            View list
+            <table>
+                <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Created at</td>
+                <td>Action</td>
+                </tr>
+                <tr>
+                    {{ $todo_arr }}
+                </tr>
+            </table>
     </body>
 </html>

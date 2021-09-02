@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\todo_list;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('view_list')->with('todo_arr',todo_list::all());
 });
+?>
