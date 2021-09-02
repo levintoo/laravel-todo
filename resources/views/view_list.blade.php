@@ -22,7 +22,6 @@
         </style>
     </head>
     <body class="antialiased">
-            View list
             <table>
                 <tr>
                 <td>Id</td>
@@ -30,9 +29,14 @@
                 <td>Created at</td>
                 <td>Action</td>
                 </tr>
+                    @foreach ($todo_arr as $td)
                 <tr>
-                    {{ $todo_arr }}
+                    <td>{{ $td->id }}</td>
+                    <td>{{ $td->name }}</td>
+                    <td>{{ $td->created_at }}</td>
+                    <td><a href="">delete</a> | <a href="">edit</a></td>        
                 </tr>
+                    @endforeach
             </table>
     </body>
 </html>
