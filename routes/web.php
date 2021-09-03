@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\todo_list;
+use App\Http\Controllers\TodoListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +15,7 @@ use App\Models\todo_list;
 |
 */
 
-Route::get('/', function () {
-    return view('view_list')->with('todo_arr',todo_list::all());
-});
+Route::get('/', 'App\Http\Controllers\TodoListController@index' );
+
+
 ?>
