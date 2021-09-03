@@ -21,13 +21,17 @@
             }
         </style>
     </head>
-    <body class="antialiased">
-            <table>
+    <body class="antialiased bg-black">
+<div class="container">
+    <div class="float-end py-2">
+        <a href="" class="btn btn-success">Create new list</a>
+    </div>
+<table class="table bg-white">
                 <tr>
-                <td>Id</td>
-                <td>Name</td>
-                <td>Created at</td>
-                <td>Action</td>
+                <th scope="row">Id</td>
+                <th scope="row">Name</td>
+                <th scope="row">Created at</td>
+                <th scope="row">Action</td>
                 </tr>
                     @foreach ($todo_arr as $td)
                 <tr>
@@ -38,5 +42,6 @@
                 </tr>
                     @endforeach
             </table>
+</div>
     </body>
 </html>
