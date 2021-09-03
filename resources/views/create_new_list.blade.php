@@ -22,26 +22,18 @@
         </style>
     </head>
     <body class="antialiased bg-black">
-<div class="container">
+    <div class="container my-5">
     <div class="float-end py-2">
-        <a href="/create" class="btn btn-success">Create new list</a>
+        <a href="/" class="btn btn-success">Back</a>
     </div>
-<table class="table bg-white">
-                <tr>
-                <th scope="row">Id</td>
-                <th scope="row">Name</td>
-                <th scope="row">Created at</td>
-                <th scope="row">Action</td>
-                </tr>
-                    @foreach ($todo_arr as $td)
-                <tr>
-                    <td>{{ $td->id }}</td>
-                    <td>{{ $td->name }}</td>
-                    <td>{{ $td->created_at }}</td>
-                    <td><a href="/delete/{{ $td->id }}">delete</a> | <a href="/edit/{{ $td->id }}">edit</a></td>        
-                </tr>
-                    @endforeach
-            </table>
+<form  class="bg-white p-2">
+
+  <input type="" placeholder="enter new list" class="form-control">
+  <input type="submit" class="btn btn-success my-2" value="save">
+
+
+</form>
 </div>
+
     </body>
 </html>

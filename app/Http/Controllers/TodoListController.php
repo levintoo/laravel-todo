@@ -24,7 +24,7 @@ class TodoListController extends Controller
      */
     public function create()
     {
-        //
+        return view('create_new_list');
     }
 
     /**
