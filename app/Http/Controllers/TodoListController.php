@@ -35,7 +35,10 @@ class TodoListController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $todo = new todo_list();
+        $todo->name = $request->input('name');
+        $todo->save();
+        return redirect('/');
     }
 
     /**

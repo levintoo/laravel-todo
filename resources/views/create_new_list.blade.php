@@ -26,11 +26,10 @@
     <div class="float-end py-2">
         <a href="/" class="btn btn-success">Back</a>
     </div>
-<form  class="bg-white p-2">
+<form action="save_new_list"  class="bg-white p-2">
 
-  <input type="" placeholder="enter new list" class="form-control">
+  <input type="" name="name" placeholder="enter new list" class="form-control">
   <input type="submit" class="btn btn-success my-2" value="save">
-
 
 </form>
 </div>
