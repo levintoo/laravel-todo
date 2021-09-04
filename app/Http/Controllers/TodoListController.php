@@ -81,8 +81,8 @@ class TodoListController extends Controller
      * @param  \App\Models\todo_list  $todo_list
      * @return \Illuminate\Http\Response
      */
-    public function destroy(todo_list $todo_list)
+    public function destroy(todo_list $todo_list, $id)
     {
-        //
+        return $id;
     }
 }
