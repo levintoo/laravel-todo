@@ -71,9 +71,12 @@ class TodoListController extends Controller
      * @param  \App\Models\todo_list  $todo_list
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, todo_list $todo_list)
+    public function update(Request $request, todo_list $todo_list ,$id)
     {
-        //
+        $todo = todo_list::find($id);
+        $todo->name = $request->input('name');
+        $todo->save();
+        return redirect('/');
     }
 
     /**

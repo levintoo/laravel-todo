@@ -26,9 +26,9 @@
     <div class="float-end py-2">
         <a href="/" class="btn btn-success">Back</a>
     </div>
-<form action="edit_list"  class="bg-white p-2">
+<form action="../update_list/{{$todo_arr->id}}"  class="bg-white p-2">
 
-  <input type="" value='{{$todo_arr->name}}' name="name" placeholder="edit list" class="form-control">
+  <input value='{{$todo_arr->name}}' name="name" placeholder="edit list" class="form-control">
   <input type="submit" class="btn btn-success my-2" value="save">
 
 </form>
