@@ -83,6 +83,8 @@ class TodoListController extends Controller
      */
     public function destroy(todo_list $todo_list, $id)
     {
-        return $id;
+        $row = todo_list::destroy($id);
+        // $row ->();
+        return redirect('/');
     }
 }
