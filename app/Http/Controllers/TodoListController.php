@@ -58,9 +58,10 @@ class TodoListController extends Controller
      * @param  \App\Models\todo_list  $todo_list
      * @return \Illuminate\Http\Response
      */
-    public function edit(todo_list $todo_list)
+    public function edit(todo_list $todo_list ,$id)
     {
-        //
+        $todo = todo_list::find($id);
+        return view('edit_list')->with('todo_arr', $todo);
     }
 
     /**
